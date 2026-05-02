@@ -1,0 +1,2 @@
+# Ignore Google credentials
+dist/google_credentials.json 

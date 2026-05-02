@@ -4,6 +4,7 @@
 ║               Created by Jan Clyde T. Talosig                ║
 ║                                                              ║
 ║  pip install flask flask-cors pillow pywebview pyinstaller   ║
+║               gspread google-auth-oauthlib                  ║
 ║                                                              ║
 ║  py make_icon.py                                             ║
 ║  pyinstaller --onefile --noconsole                           ║
@@ -11,7 +12,7 @@
 ╚══════════════════════════════════════════════════════════════╝
 """
 
-import sys, os, threading, base64, time, textwrap
+import sys, os, threading, base64, time, textwrap, re
 import smtplib, ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text      import MIMEText
@@ -698,10 +699,33 @@ input:checked + .toggle-slider::before {
       </div>
 
       <div class="card">
+        <div class="card-title">Google Sheets Live Logging</div>
+        <div class="input-row" style="margin-bottom:10px;">
+          <input type="url" id="sheets-log-url-input"
+                 placeholder="https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit"
+                 style="flex:1;" onchange="saveSheetLogUrl()"/>
+          <button class="btn btn-sm btn-primary" onclick="saveSheetLogUrl()">Save</button>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+          <button class="btn btn-sm btn-ghost" id="btn-connect-google"
+                  onclick="connectGoogle()">🔗 Connect Google Account</button>
+          <button class="btn btn-sm btn-ghost" onclick="syncAllLogsToSheets()">⬆ Sync All</button>
+        </div>
+        <div id="sheets-auth-badge" style="margin-top:10px;font-family:var(--mono);font-size:11px;"></div>
+        <div id="sheets-sync-status" class="helper" style="margin-top:6px;"></div>
+      </div>
+
+      <div class="card">
         <div class="card-title">Storage</div>
-        <div style="display:flex;gap:12px;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <button class="btn btn-primary btn-sm" onclick="exportStorageJSON()">
-            Export localStorage
+            ⬇ Export Storage JSON
+          </button>
+          <button class="btn btn-sm btn-ghost" onclick="exportFullLogsExcel()">
+              ⬇ Export Full Logs (.xlsx)
+          </button>
+          <button class="btn btn-sm btn-ghost" onclick="syncAllLogsToSheets()">
+              ⬆ Sync Logs to Sheets
           </button>
           <button class="btn btn-sm"
             style="background:rgba(255,95,61,.15);color:var(--warn);border:1px solid rgba(255,95,61,.3);"
@@ -775,7 +799,7 @@ let rows         = [];
 let filteredRows = [];
 let payStatusKey = null;
 let scanTimer    = null;
-
+let scanLogs = JSON.parse(localStorage.getItem('scan_logs') || '[]');
 
 // ════════════════════════════════════════════════
 //  FIELD EXTRACTION
@@ -873,6 +897,7 @@ window.addEventListener('DOMContentLoaded', () => {
   loadGasUrl();
   loadConfig();
   loadAutoSendToggle();
+  loadSheetLogUrl();
   updateClock();
   setInterval(updateClock, 1000);
 
@@ -945,19 +970,131 @@ function isAutoSendEnabled() {
 }
 
 // ════════════════════════════════════════════════
+//  GOOGLE SHEETS LIVE LOGGING
+// ════════════════════════════════════════════════
+function saveSheetLogUrl() {
+  const val = document.getElementById('sheets-log-url-input').value.trim();
+  localStorage.setItem('ep_sheets_log_url', val);
+  toast('Google Sheets URL saved.', 'info');
+}
+function loadSheetLogUrl() {
+  const el = document.getElementById('sheets-log-url-input');
+  if (el) el.value = localStorage.getItem('ep_sheets_log_url') || '';
+  refreshAuthBadge();
+}
+
+function refreshAuthBadge() {
+  fetch('http://127.0.0.1:3000/sheets-auth-status')
+    .then(r => r.json())
+    .then(d => {
+      const badge = document.getElementById('sheets-auth-badge');
+      const btn   = document.getElementById('btn-connect-google');
+      if (!badge) return;
+      if (d.busy) {
+        badge.innerHTML = '<span style="color:var(--accent2);">⏳ Waiting for Google sign-in in your browser…</span>';
+        if (btn) btn.disabled = true;
+        setTimeout(refreshAuthBadge, 1500);   // keep polling until done
+      } else if (d.error) {
+        badge.innerHTML = '<span style="color:var(--warn);">✕ Auth error: ' + d.error + '</span>';
+        if (btn) { btn.disabled = false; btn.textContent = '🔗 Connect Google Account'; }
+      } else if (d.authenticated) {
+        badge.innerHTML = '<span style="color:var(--accent);">● Google account linked — syncs will work automatically.</span>';
+        if (btn) { btn.disabled = false; btn.textContent = '🔁 Re-connect Google Account'; }
+      } else {
+        badge.innerHTML = '<span style="color:var(--warn);">⚠ Not connected yet — click Connect Google Account below.</span>';
+        if (btn) { btn.disabled = false; btn.textContent = '🔗 Connect Google Account'; }
+      }
+    }).catch(() => {});
+}
+
+async function connectGoogle() {
+  const btn = document.getElementById('btn-connect-google');
+  if (btn) { btn.disabled = true; btn.textContent = 'Opening browser…'; }
+  const badge = document.getElementById('sheets-auth-badge');
+  if (badge) badge.innerHTML = '<span style="color:var(--accent2);">⏳ A browser tab is opening — sign in with Google, then return here…</span>';
+  try {
+    const res  = await fetch('http://127.0.0.1:3000/sheets-auth', { method: 'POST' });
+    const data = await res.json();
+    if (data.status === 'error') {
+      toast(data.message, 'error');
+      if (badge) badge.innerHTML = '<span style="color:var(--warn);">✕ ' + data.message + '</span>';
+      if (btn)  { btn.disabled = false; btn.textContent = '🔗 Connect Google Account'; }
+    } else {
+      // Poll until the background OAuth thread finishes
+      setTimeout(refreshAuthBadge, 2000);
+    }
+  } catch(e) {
+    toast('Could not reach backend: ' + e.message, 'error');
+    if (btn) { btn.disabled = false; btn.textContent = '🔗 Connect Google Account'; }
+  }
+}
+function getSheetLogUrl() {
+  return localStorage.getItem('ep_sheets_log_url') || '';
+}
+
+async function syncLogToSheets(logEntry) {
+  const url = getSheetLogUrl();
+  if (!url) return;  // silently skip if not configured
+  try {
+    await fetch('http://127.0.0.1:3000/sheets-sync', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, logs: [logEntry] })
+    });
+  } catch(e) { console.warn('Sheets sync failed:', e.message); }
+}
+
+async function syncAllLogsToSheets() {
+  const url = getSheetLogUrl();
+  if (!url) { toast('No Google Sheets URL configured.', 'error'); return; }
+  const logs = JSON.parse(localStorage.getItem('scan_logs') || '[]');
+  if (!logs.length) { toast('No logs to sync.', 'error'); return; }
+
+  const statusEl = document.getElementById('sheets-sync-status');
+  if (statusEl) statusEl.textContent = 'Syncing ' + logs.length + ' log(s)…';
+  toast('Syncing ' + logs.length + ' log(s) to Sheets…', 'info');
+
+  try {
+    const res  = await fetch('http://127.0.0.1:3000/sheets-sync', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, logs })
+    });
+    const data = await res.json();
+    const ok   = (data.results || []).filter(Boolean).length;
+    const fail = logs.length - ok;
+    const msg  = 'Synced ' + ok + ' log(s)' + (fail ? ' — ' + fail + ' failed' : '') + '.';
+    if (statusEl) statusEl.textContent = msg;
+    toast(msg, fail ? 'error' : 'success');
+  } catch(e) {
+    const msg = 'Sync error: ' + e.message;
+    if (statusEl) statusEl.textContent = msg;
+    toast(msg, 'error');
+  }
+}
+
+// ════════════════════════════════════════════════
 //  STORAGE MANAGEMENT
 // ════════════════════════════════════════════════
-function exportStorageJSON() {
+async function exportStorageJSON() {
   const data = {};
   for (let i = 0; i < localStorage.length; i++) {
     const k = localStorage.key(i);
     data[k] = localStorage.getItem(k);
   }
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'eventpass_storage.json';
-  a.click();
+  const jsonStr = JSON.stringify(data, null, 2);
+  // btoa needs latin-1; encode UTF-8 first
+  const b64 = btoa(unescape(encodeURIComponent(jsonStr)));
+  const filename = 'eventpass_storage_' + new Date().toISOString().slice(0,10) + '.json';
+  try {
+    const res    = await fetch('http://127.0.0.1:3000/save-file', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ filename, data: b64 })
+    });
+    const result = await res.json();
+    if (result.success)                              toast('✓ Saved: ' + result.path);
+    else if (result.message !== 'Cancelled.')        toast('Save failed: ' + result.message, 'error');
+  } catch(e) { toast('Export error: ' + e.message, 'error'); }
 }
 
 function clearStorage() {
@@ -1278,6 +1415,44 @@ async function sendToBackend({ email, name, id, department, imageBase64 }) {
     throw new Error(data.message || 'Backend error (HTTP ' + res.status + ').');
   return data;
 }
+// ════════════════════════════════════════════════
+//  EXPORT EXCEL
+// ════════════════════════════════════════════════
+async function exportFullLogsExcel() {
+  const scanLogs = JSON.parse(localStorage.getItem('scan_logs') || '[]');
+  if (!scanLogs.length) { toast('No scan logs to export.', 'error'); return; }
+
+  const data = scanLogs.map(log => ({
+    ID:           log.id,
+    Name:         log.name,
+    Email:        log.email,
+    Department:   log.department,
+    Attendees:    log.attendees,
+    Payment:      log.payment_status,
+    ScanStatus:   log.scan_status,
+    Timestamp:    log.scan_timestamp,
+    OriginalScan: log.original_scan_time || '',
+    Device:       log.device || ''
+  }));
+
+  const ws = XLSX.utils.json_to_sheet(data);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Event Logs');
+
+  // Generate as base64 so it can be sent to the native save dialog
+  const b64      = XLSX.write(wb, { bookType: 'xlsx', type: 'base64' });
+  const filename = 'EventLogs_' + new Date().toISOString().slice(0,10) + '.xlsx';
+
+  try {
+    const res    = await fetch('http://127.0.0.1:3000/save-file', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ filename, data: b64 })
+    });
+    const result = await res.json();
+    if (result.success)                              toast('✓ Saved: ' + result.path);
+    else if (result.message !== 'Cancelled.')        toast('Save failed: ' + result.message, 'error');
+  } catch(e) { toast('Export error: ' + e.message, 'error'); }
+}
 
 // ════════════════════════════════════════════════
 //  BARCODE SCANNER
@@ -1315,12 +1490,39 @@ function finalizeBarcodeScan(scanned) {
   if (sd) {
     banner.className   = 'scan-banner warning';
     banner.textContent = '⚠ Stub already received — ' + sd.timestamp;
+    scanLogs.push({
+        id: f.id,
+        name: f.name,
+        email: f.email,
+        department: f.dept,
+        attendees: parseInt(f.att || 1),
+        payment_status: isRowPaid(matchRow) ? 'PAID' : 'UNPAID',
+        scan_status: 'ALREADY_SCANNED',
+        scan_timestamp: ts2,
+        original_scan_time: sd.timestamp,
+        device: navigator.userAgent
+    });
+    syncLogToSheets(scanLogs[scanLogs.length - 1]);
+    localStorage.setItem('scan_logs', JSON.stringify(scanLogs));
     showProfileResult(f, matchRow, sd);
     toast('⚠ Already scanned — ' + sd.timestamp, 'error');
   } else {
     const ts      = new Date().toLocaleString('sv').replace('T', ' ').slice(0, 19);
     const newScan = { scanned: true, timestamp: ts };
     setScanData(f.id, newScan);
+    scanLogs.push({
+        id: f.id,
+        name: f.name,
+        email: f.email,
+        department: f.dept,
+        attendees: parseInt(f.att || 1),
+        payment_status: isRowPaid(matchRow) ? 'PAID' : 'UNPAID',
+        scan_status: 'RECEIVED',
+        scan_timestamp: ts,
+        device: navigator.userAgent
+    });
+    syncLogToSheets(scanLogs[scanLogs.length - 1]);
+    localStorage.setItem('scan_logs', JSON.stringify(scanLogs));
     banner.className   = 'scan-banner success';
     banner.textContent = '✓ ' + (f.att || 1) + ' attendee(s) recorded — ' + ts;
     showProfileResult(f, matchRow, newScan);
@@ -1428,6 +1630,9 @@ function toast(msg, type) {
     setTimeout(() => el.remove(), 400);
   }, 4000);
 }
+window.exportFullLogsExcel = exportFullLogsExcel;
+window.exportStorageJSON   = exportStorageJSON;
+window.syncAllLogsToSheets = syncAllLogsToSheets;
 </script>
 </body>
 </html>"""
@@ -1572,6 +1777,8 @@ SPLASH_HTML = """<!DOCTYPE html>
 flask_app = Flask(__name__)
 CORS(flask_app, origins='*')
 
+_window = None  # set after webview.create_window; used by /save-file
+
 
 def escape_html(s):
     return (str(s).replace('&', '&amp;').replace('<', '&lt;')
@@ -1696,6 +1903,165 @@ def send_email():
         return jsonify(success=False, message=f'Email delivery failed: {e}'), 500
 
 
+@flask_app.route('/save-file', methods=['POST', 'OPTIONS'])
+def save_file():
+    if request.method == 'OPTIONS':
+        return '', 204
+    data     = request.get_json(force=True) or {}
+    filename = data.get('filename', 'export.xlsx')
+    file_b64 = data.get('data', '')
+    if not file_b64:
+        return jsonify(success=False, message='No data provided.'), 400
+    try:
+        file_bytes = base64.b64decode(file_b64)
+    except Exception as e:
+        return jsonify(success=False, message=f'Bad data: {e}'), 400
+    if _window is None:
+        return jsonify(success=False, message='Window not ready.'), 500
+    ext      = os.path.splitext(filename)[1].lower() or '.xlsx'
+    type_map = {
+        '.xlsx': ('Excel Files (*.xlsx)', 'All files (*.*)'),
+        '.json': ('JSON Files (*.json)',  'All files (*.*)'),
+        '.csv':  ('CSV Files (*.csv)',    'All files (*.*)')
+    }
+    file_types = type_map.get(ext, ('All files (*.*)',))
+    result = _window.create_file_dialog(
+        webview.SAVE_DIALOG,
+        directory=os.path.expanduser('~'),
+        save_filename=filename,
+        file_types=file_types
+    )
+    if not result:
+        return jsonify(success=False, message='Cancelled.')
+    save_path = result[0] if isinstance(result, (list, tuple)) else result
+    if not save_path.lower().endswith(ext):
+        save_path += ext
+    try:
+        with open(save_path, 'wb') as f:
+            f.write(file_bytes)
+        return jsonify(success=True, path=os.path.basename(save_path))
+    except Exception as e:
+        return jsonify(success=False, message=f'Write failed: {e}'), 500
+
+
+# ════════════════════════════════════════════════════════════
+#  GOOGLE SHEETS — direct write via gspread / OAuth
+# ════════════════════════════════════════════════════════════
+SHEET_HEADERS  = ['ID', 'Name', 'Email', 'Dept', 'Attendees',
+                  'Payment', 'Scan Status', 'Timestamp']
+_TOKEN_PATH    = os.path.join(os.path.expanduser('~'), '.eventpass_token.json')
+_oauth_state   = {'busy': False, 'error': None}   # shared across threads
+
+def _creds_path():
+    base = (os.path.dirname(sys.executable) if getattr(sys, 'frozen', False)
+            else os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, 'google_credentials.json')
+
+def _get_spreadsheet_id(url: str):
+    m = re.search(r'/spreadsheets/d/([a-zA-Z0-9_-]+)', url)
+    return m.group(1) if m else None
+
+def _get_gspread_client_silent():
+    """Build a gspread client from the saved token — never triggers a browser."""
+    import gspread
+    from google.oauth2.credentials         import Credentials
+    from google.auth.transport.requests    import Request as GRequest
+    SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+    if not os.path.exists(_TOKEN_PATH):
+        raise RuntimeError('Not authenticated. Click "Connect Google Account" first.')
+    creds = Credentials.from_authorized_user_file(_TOKEN_PATH, SCOPES)
+    if creds.expired and creds.refresh_token:
+        creds.refresh(GRequest())
+        with open(_TOKEN_PATH, 'w') as f:
+            f.write(creds.to_json())
+    return gspread.Client(auth=creds)
+
+def _oauth_worker(cp):
+    """Run the OAuth browser flow in a background thread so Flask stays responsive."""
+    try:
+        import webbrowser
+        from google_auth_oauthlib.flow import InstalledAppFlow
+        SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+        flow   = InstalledAppFlow.from_client_secrets_file(cp, SCOPES)
+        # open_browser=False lets us call webbrowser.open ourselves so it
+        # works reliably inside a noconsole / pywebview process.
+        flow.run_local_server(port=0, open_browser=True)
+        creds = flow.credentials
+        with open(_TOKEN_PATH, 'w') as f:
+            f.write(creds.to_json())
+        _oauth_state['error'] = None
+    except Exception as e:
+        _oauth_state['error'] = str(e)
+    finally:
+        _oauth_state['busy'] = False
+
+
+@flask_app.route('/sheets-auth', methods=['POST', 'OPTIONS'])
+def sheets_auth():
+    """Kick off the OAuth browser flow in a background thread; return immediately."""
+    if request.method == 'OPTIONS':
+        return '', 204
+    if _oauth_state['busy']:
+        return jsonify(status='in_progress',
+                       message='Browser login already in progress.')
+    cp = _creds_path()
+    if not os.path.exists(cp):
+        return jsonify(status='error',
+                       message='google_credentials.json not found next to the exe.'), 400
+    _oauth_state['busy']  = True
+    _oauth_state['error'] = None
+    t = threading.Thread(target=_oauth_worker, args=(cp,), daemon=True)
+    t.start()
+    return jsonify(status='opening_browser',
+                   message='A browser tab is opening — sign in with Google, then return here.')
+
+
+@flask_app.route('/sheets-auth-status', methods=['GET'])
+def sheets_auth_status():
+    authenticated = os.path.exists(_TOKEN_PATH)
+    return jsonify(
+        authenticated=authenticated,
+        busy=_oauth_state['busy'],
+        error=_oauth_state['error']
+    )
+
+
+@flask_app.route('/sheets-sync', methods=['POST', 'OPTIONS'])
+def sheets_sync():
+    if request.method == 'OPTIONS':
+        return '', 204
+    data = request.get_json(force=True) or {}
+    url  = data.get('url', '').strip()
+    logs = data.get('logs', [])
+
+    if not url:
+        return jsonify(success=False, message='No sheet URL provided.'), 400
+    sheet_id = _get_spreadsheet_id(url)
+    if not sheet_id:
+        return jsonify(success=False,
+                       message='Could not parse Spreadsheet ID. Paste the full Google Sheets link.'), 400
+    try:
+        gc = _get_gspread_client_silent()
+        ws = gc.open_by_key(sheet_id).sheet1
+        if not ws.row_values(1):
+            ws.append_row(SHEET_HEADERS, value_input_option='RAW')
+        for log in logs:
+            ws.append_row(
+                [log.get('id',''), log.get('name',''), log.get('email',''),
+                 log.get('department',''), log.get('attendees',''),
+                 log.get('payment_status',''), log.get('scan_status',''),
+                 log.get('scan_timestamp','')],
+                value_input_option='USER_ENTERED'
+            )
+        return jsonify(success=True, synced=len(logs),
+                       total=len(logs), results=[True]*len(logs))
+    except RuntimeError as e:
+        return jsonify(success=False, message=str(e)), 403
+    except Exception as e:
+        print(f'Sheets sync error: {e}')
+        return jsonify(success=False, message=f'Sheets error: {e}'), 500
+
+
 @flask_app.route('/health')
 def health():
     return jsonify(status='ok', service='EventPass v2', port=PORT)
@@ -1732,11 +2098,12 @@ def launch_sequence(window):
 #  MAIN
 # ════════════════════════════════════════════════════════════
 def main():
+    global _window
     flask_thread = threading.Thread(target=run_flask, daemon=True)
     flask_thread.start()
     time.sleep(0.3)
 
-    window = webview.create_window(
+    _window = webview.create_window(
         title            = 'EventPass — Admin Dashboard',
         html             = SPLASH_HTML,
         width            = 1340,
@@ -1747,7 +2114,7 @@ def main():
     )
 
     def on_shown():
-        t = threading.Thread(target=launch_sequence, args=(window,), daemon=True)
+        t = threading.Thread(target=launch_sequence, args=(_window,), daemon=True)
         t.start()
 
     webview.start(on_shown)

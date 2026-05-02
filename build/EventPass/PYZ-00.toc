@@ -216,6 +216,14 @@
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\calendar.py',
    'PYMODULE'),
+  ('certifi',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\certifi\\__init__.py',
+   'PYMODULE'),
+  ('certifi.core',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\certifi\\core.py',
+   'PYMODULE'),
   ('cffi',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cffi\\__init__.py',
@@ -283,6 +291,34 @@
   ('cgi',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\cgi.py',
+   'PYMODULE'),
+  ('charset_normalizer',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\__init__.py',
+   'PYMODULE'),
+  ('charset_normalizer.api',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\api.py',
+   'PYMODULE'),
+  ('charset_normalizer.constant',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\constant.py',
+   'PYMODULE'),
+  ('charset_normalizer.legacy',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\legacy.py',
+   'PYMODULE'),
+  ('charset_normalizer.models',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\models.py',
+   'PYMODULE'),
+  ('charset_normalizer.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\utils.py',
+   'PYMODULE'),
+  ('charset_normalizer.version',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\charset_normalizer\\version.py',
    'PYMODULE'),
   ('click',
    'C:\\Users\\Jan Clyde '
@@ -488,6 +524,218 @@
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\copy.py',
    'PYMODULE'),
+  ('cryptography',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.__about__',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\__about__.py',
+   'PYMODULE'),
+  ('cryptography.exceptions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\exceptions.py',
+   'PYMODULE'),
+  ('cryptography.hazmat',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat._oid',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\_oid.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\backends\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.backend',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\backend.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\bindings\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl._conditional',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\_conditional.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.bindings.openssl.binding',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\binding.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\decrepit\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers.algorithms',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\algorithms.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.decrepit.ciphers.modes',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\modes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._asymmetric',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\_asymmetric.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._cipheralgorithm',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\_cipheralgorithm.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._modes',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\_modes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives._serialization',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\_serialization.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.dh',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\dh.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.dsa',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\dsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ec',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ec.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ed25519',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ed25519.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.ed448',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\ed448.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.mldsa',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\mldsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.mlkem',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\mlkem.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.padding',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\padding.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.rsa',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\rsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.types',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\types.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\utils.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.x25519',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x25519.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.x448',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x448.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.algorithms',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\algorithms.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.modes',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\modes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.constant_time',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\constant_time.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.hashes',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\hashes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.ssh',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\ssh.py',
+   'PYMODULE'),
+  ('cryptography.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\utils.py',
+   'PYMODULE'),
+  ('cryptography.x509',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.x509.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\base.py',
+   'PYMODULE'),
+  ('cryptography.x509.certificate_transparency',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\certificate_transparency.py',
+   'PYMODULE'),
+  ('cryptography.x509.extensions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\extensions.py',
+   'PYMODULE'),
+  ('cryptography.x509.general_name',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\general_name.py',
+   'PYMODULE'),
+  ('cryptography.x509.name',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\name.py',
+   'PYMODULE'),
+  ('cryptography.x509.oid',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\oid.py',
+   'PYMODULE'),
+  ('cryptography.x509.verification',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cryptography\\x509\\verification.py',
+   'PYMODULE'),
   ('csv',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\csv.py',
@@ -667,6 +915,10 @@
   ('distutils.versionpredicate',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\distutils\\versionpredicate.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\doctest.py',
    'PYMODULE'),
   ('email',
    'C:\\Users\\Jan Clyde '
@@ -909,6 +1161,275 @@
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\glob.py',
    'PYMODULE'),
+  ('google', '-', 'PYMODULE'),
+  ('google.auth',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\__init__.py',
+   'PYMODULE'),
+  ('google.auth._agent_identity_utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_agent_identity_utils.py',
+   'PYMODULE'),
+  ('google.auth._cache',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_cache.py',
+   'PYMODULE'),
+  ('google.auth._cloud_sdk',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_cloud_sdk.py',
+   'PYMODULE'),
+  ('google.auth._constants',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_constants.py',
+   'PYMODULE'),
+  ('google.auth._credentials_base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_credentials_base.py',
+   'PYMODULE'),
+  ('google.auth._default',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_default.py',
+   'PYMODULE'),
+  ('google.auth._exponential_backoff',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_exponential_backoff.py',
+   'PYMODULE'),
+  ('google.auth._helpers',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_helpers.py',
+   'PYMODULE'),
+  ('google.auth._refresh_worker',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_refresh_worker.py',
+   'PYMODULE'),
+  ('google.auth._service_account_info',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\_service_account_info.py',
+   'PYMODULE'),
+  ('google.auth.api_key',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\api_key.py',
+   'PYMODULE'),
+  ('google.auth.app_engine',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\app_engine.py',
+   'PYMODULE'),
+  ('google.auth.aws',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\aws.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\compute_engine\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine._metadata',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\compute_engine\\_metadata.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine._mtls',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\compute_engine\\_mtls.py',
+   'PYMODULE'),
+  ('google.auth.compute_engine.credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\compute_engine\\credentials.py',
+   'PYMODULE'),
+  ('google.auth.credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\credentials.py',
+   'PYMODULE'),
+  ('google.auth.crypt',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.crypt._cryptography_rsa',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\_cryptography_rsa.py',
+   'PYMODULE'),
+  ('google.auth.crypt._python_rsa',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\_python_rsa.py',
+   'PYMODULE'),
+  ('google.auth.crypt.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\base.py',
+   'PYMODULE'),
+  ('google.auth.crypt.es',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\es.py',
+   'PYMODULE'),
+  ('google.auth.crypt.es256',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\es256.py',
+   'PYMODULE'),
+  ('google.auth.crypt.rsa',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\crypt\\rsa.py',
+   'PYMODULE'),
+  ('google.auth.environment_vars',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\environment_vars.py',
+   'PYMODULE'),
+  ('google.auth.exceptions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\exceptions.py',
+   'PYMODULE'),
+  ('google.auth.external_account',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\external_account.py',
+   'PYMODULE'),
+  ('google.auth.external_account_authorized_user',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\external_account_authorized_user.py',
+   'PYMODULE'),
+  ('google.auth.iam',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\iam.py',
+   'PYMODULE'),
+  ('google.auth.identity_pool',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\identity_pool.py',
+   'PYMODULE'),
+  ('google.auth.impersonated_credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\impersonated_credentials.py',
+   'PYMODULE'),
+  ('google.auth.jwt',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\jwt.py',
+   'PYMODULE'),
+  ('google.auth.metrics',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\metrics.py',
+   'PYMODULE'),
+  ('google.auth.pluggable',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\pluggable.py',
+   'PYMODULE'),
+  ('google.auth.transport',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\transport\\__init__.py',
+   'PYMODULE'),
+  ('google.auth.transport._custom_tls_signer',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\transport\\_custom_tls_signer.py',
+   'PYMODULE'),
+  ('google.auth.transport._mtls_helper',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\transport\\_mtls_helper.py',
+   'PYMODULE'),
+  ('google.auth.transport.requests',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\transport\\requests.py',
+   'PYMODULE'),
+  ('google.auth.version',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\auth\\version.py',
+   'PYMODULE'),
+  ('google.oauth2',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\__init__.py',
+   'PYMODULE'),
+  ('google.oauth2._client',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\_client.py',
+   'PYMODULE'),
+  ('google.oauth2.challenges',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\challenges.py',
+   'PYMODULE'),
+  ('google.oauth2.credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\credentials.py',
+   'PYMODULE'),
+  ('google.oauth2.gdch_credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\gdch_credentials.py',
+   'PYMODULE'),
+  ('google.oauth2.reauth',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\reauth.py',
+   'PYMODULE'),
+  ('google.oauth2.service_account',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\service_account.py',
+   'PYMODULE'),
+  ('google.oauth2.sts',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\sts.py',
+   'PYMODULE'),
+  ('google.oauth2.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\utils.py',
+   'PYMODULE'),
+  ('google.oauth2.webauthn_handler',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\webauthn_handler.py',
+   'PYMODULE'),
+  ('google.oauth2.webauthn_handler_factory',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\webauthn_handler_factory.py',
+   'PYMODULE'),
+  ('google.oauth2.webauthn_types',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google\\oauth2\\webauthn_types.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google_auth_oauthlib\\__init__.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib.flow',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google_auth_oauthlib\\flow.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib.helpers',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google_auth_oauthlib\\helpers.py',
+   'PYMODULE'),
+  ('google_auth_oauthlib.interactive',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\google_auth_oauthlib\\interactive.py',
+   'PYMODULE'),
+  ('gspread',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\__init__.py',
+   'PYMODULE'),
+  ('gspread.auth',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\auth.py',
+   'PYMODULE'),
+  ('gspread.cell',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\cell.py',
+   'PYMODULE'),
+  ('gspread.client',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\client.py',
+   'PYMODULE'),
+  ('gspread.exceptions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\exceptions.py',
+   'PYMODULE'),
+  ('gspread.http_client',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\http_client.py',
+   'PYMODULE'),
+  ('gspread.spreadsheet',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\spreadsheet.py',
+   'PYMODULE'),
+  ('gspread.urls',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\urls.py',
+   'PYMODULE'),
+  ('gspread.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\utils.py',
+   'PYMODULE'),
+  ('gspread.worksheet',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\gspread\\worksheet.py',
+   'PYMODULE'),
   ('gzip',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\gzip.py',
@@ -948,6 +1469,30 @@
   ('http.server',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('idna',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\idna\\uts46data.py',
    'PYMODULE'),
   ('imghdr',
    'C:\\Users\\Jan Clyde '
@@ -1032,6 +1577,10 @@
   ('inspect',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\inspect.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ipaddress.py',
    'PYMODULE'),
   ('itsdangerous',
    'C:\\Users\\Jan Clyde '
@@ -1296,6 +1845,298 @@
   ('numbers',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\numbers.py',
+   'PYMODULE'),
+  ('oauthlib',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.common',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\common.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.access_token',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\access_token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.authorization',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\authorization.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\base.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.pre_configured',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\pre_configured.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.request_token',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\request_token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.resource',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\resource.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.endpoints.signature_only',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\endpoints\\signature_only.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.errors',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\errors.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.parameters',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\parameters.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.request_validator',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\request_validator.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.signature',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\signature.py',
+   'PYMODULE'),
+  ('oauthlib.oauth1.rfc5849.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth1\\rfc5849\\utils.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.backend_application',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\backend_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\base.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.legacy_application',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\legacy_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.mobile_application',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\mobile_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.service_application',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\service_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.clients.web_application',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\clients\\web_application.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.authorization',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\authorization.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\base.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.introspect',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\introspect.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.metadata',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\metadata.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.pre_configured',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\pre_configured.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.resource',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\resource.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.revocation',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\revocation.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.endpoints.token',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\endpoints\\token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.errors',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\errors.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.authorization_code',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\authorization_code.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\base.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.client_credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\client_credentials.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.implicit',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\implicit.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.refresh_token',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\refresh_token.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\grant_types\\resource_owner_password_credentials.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.parameters',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\parameters.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.request_validator',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\request_validator.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.tokens',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\tokens.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc6749.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc6749\\utils.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.clients',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\clients\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.clients.device',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\clients\\device.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.endpoints',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\endpoints\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.endpoints.device_authorization',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\endpoints\\device_authorization.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.endpoints.pre_configured',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\endpoints\\pre_configured.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.errors',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\errors.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.grant_types',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\grant_types\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.oauth2.rfc8628.grant_types.device_code',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\oauth2\\rfc8628\\grant_types\\device_code.py',
+   'PYMODULE'),
+  ('oauthlib.openid',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.endpoints',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\endpoints\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.endpoints.pre_configured',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\endpoints\\pre_configured.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.endpoints.userinfo',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\endpoints\\userinfo.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\__init__.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types.authorization_code',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\authorization_code.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\base.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types.dispatchers',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\dispatchers.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types.hybrid',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\hybrid.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types.implicit',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\implicit.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.grant_types.refresh_token',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\grant_types\\refresh_token.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.request_validator',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\request_validator.py',
+   'PYMODULE'),
+  ('oauthlib.openid.connect.core.tokens',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\openid\\connect\\core\\tokens.py',
+   'PYMODULE'),
+  ('oauthlib.signals',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\signals.py',
+   'PYMODULE'),
+  ('oauthlib.uri_validate',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\oauthlib\\uri_validate.py',
    'PYMODULE'),
   ('opcode',
    'C:\\Users\\Jan Clyde '
@@ -1593,6 +2434,130 @@
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\py_compile.py',
    'PYMODULE'),
+  ('pyasn1',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\ber\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber.decoder',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\ber\\decoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec.ber.eoo',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\ber\\eoo.py',
+   'PYMODULE'),
+  ('pyasn1.codec.cer',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\cer\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.cer.decoder',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\cer\\decoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec.der',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\der\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.codec.der.decoder',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\der\\decoder.py',
+   'PYMODULE'),
+  ('pyasn1.codec.streaming',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\codec\\streaming.py',
+   'PYMODULE'),
+  ('pyasn1.compat',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.compat.integer',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\compat\\integer.py',
+   'PYMODULE'),
+  ('pyasn1.debug',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\debug.py',
+   'PYMODULE'),
+  ('pyasn1.error',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\error.py',
+   'PYMODULE'),
+  ('pyasn1.type',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1.type.base',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\base.py',
+   'PYMODULE'),
+  ('pyasn1.type.char',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\char.py',
+   'PYMODULE'),
+  ('pyasn1.type.constraint',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\constraint.py',
+   'PYMODULE'),
+  ('pyasn1.type.error',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\error.py',
+   'PYMODULE'),
+  ('pyasn1.type.namedtype',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\namedtype.py',
+   'PYMODULE'),
+  ('pyasn1.type.namedval',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\namedval.py',
+   'PYMODULE'),
+  ('pyasn1.type.opentype',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\opentype.py',
+   'PYMODULE'),
+  ('pyasn1.type.tag',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\tag.py',
+   'PYMODULE'),
+  ('pyasn1.type.tagmap',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\tagmap.py',
+   'PYMODULE'),
+  ('pyasn1.type.univ',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\univ.py',
+   'PYMODULE'),
+  ('pyasn1.type.useful',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1\\type\\useful.py',
+   'PYMODULE'),
+  ('pyasn1_modules',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1_modules\\__init__.py',
+   'PYMODULE'),
+  ('pyasn1_modules.pem',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1_modules\\pem.py',
+   'PYMODULE'),
+  ('pyasn1_modules.rfc2251',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1_modules\\rfc2251.py',
+   'PYMODULE'),
+  ('pyasn1_modules.rfc2459',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1_modules\\rfc2459.py',
+   'PYMODULE'),
+  ('pyasn1_modules.rfc5208',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pyasn1_modules\\rfc5208.py',
+   'PYMODULE'),
   ('pycparser',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pycparser\\__init__.py',
@@ -1640,6 +2605,94 @@
   ('random',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\random.py',
+   'PYMODULE'),
+  ('requests',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('requests.api',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests.models',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests\\utils.py',
+   'PYMODULE'),
+  ('requests_oauthlib',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests_oauthlib\\__init__.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth1_auth',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests_oauthlib\\oauth1_auth.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth1_session',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests_oauthlib\\oauth1_session.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth2_auth',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests_oauthlib\\oauth2_auth.py',
+   'PYMODULE'),
+  ('requests_oauthlib.oauth2_session',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\requests_oauthlib\\oauth2_session.py',
    'PYMODULE'),
   ('rlcompleter',
    'C:\\Users\\Jan Clyde '
@@ -2428,6 +3481,150 @@
   ('urllib.response',
    'C:\\Users\\Jan Clyde '
    'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib3',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\__init__.py',
+   'PYMODULE'),
+  ('urllib3._base_connection',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_base_connection.py',
+   'PYMODULE'),
+  ('urllib3._collections',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_collections.py',
+   'PYMODULE'),
+  ('urllib3._request_methods',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_request_methods.py',
+   'PYMODULE'),
+  ('urllib3._version',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\_version.py',
+   'PYMODULE'),
+  ('urllib3.connection',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connection.py',
+   'PYMODULE'),
+  ('urllib3.connectionpool',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\connectionpool.py',
+   'PYMODULE'),
+  ('urllib3.contrib',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\emscripten\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.connection',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\emscripten\\connection.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.fetch',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\emscripten\\fetch.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.request',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\emscripten\\request.py',
+   'PYMODULE'),
+  ('urllib3.contrib.emscripten.response',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\contrib\\socks.py',
+   'PYMODULE'),
+  ('urllib3.exceptions',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\exceptions.py',
+   'PYMODULE'),
+  ('urllib3.fields',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\fields.py',
+   'PYMODULE'),
+  ('urllib3.filepost',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\filepost.py',
+   'PYMODULE'),
+  ('urllib3.http2',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\http2\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.http2.connection',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\http2\\connection.py',
+   'PYMODULE'),
+  ('urllib3.http2.probe',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\http2\\probe.py',
+   'PYMODULE'),
+  ('urllib3.poolmanager',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\poolmanager.py',
+   'PYMODULE'),
+  ('urllib3.response',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\response.py',
+   'PYMODULE'),
+  ('urllib3.util',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\__init__.py',
+   'PYMODULE'),
+  ('urllib3.util.connection',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\connection.py',
+   'PYMODULE'),
+  ('urllib3.util.proxy',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\proxy.py',
+   'PYMODULE'),
+  ('urllib3.util.request',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\request.py',
+   'PYMODULE'),
+  ('urllib3.util.response',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\response.py',
+   'PYMODULE'),
+  ('urllib3.util.retry',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\retry.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\ssl_.py',
+   'PYMODULE'),
+  ('urllib3.util.ssl_match_hostname',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
+   'PYMODULE'),
+  ('urllib3.util.ssltransport',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\ssltransport.py',
+   'PYMODULE'),
+  ('urllib3.util.timeout',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\timeout.py',
+   'PYMODULE'),
+  ('urllib3.util.url',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\url.py',
+   'PYMODULE'),
+  ('urllib3.util.util',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\util.py',
+   'PYMODULE'),
+  ('urllib3.util.wait',
+   'C:\\Users\\Jan Clyde '
+   'Talosig\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\urllib3\\util\\wait.py',
    'PYMODULE'),
   ('uu',
    'C:\\Users\\Jan Clyde '
