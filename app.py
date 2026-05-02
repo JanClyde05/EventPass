@@ -445,11 +445,40 @@ input:checked + .toggle-slider::before {
 </head>
 <body>
 
+<!-- Exit Confirmation Modal -->
+<div id="exit-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);
+     z-index:9999;display:none;align-items:center;justify-content:center;">
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;
+              padding:32px 40px;text-align:center;min-width:320px;box-shadow:0 8px 40px #000a;">
+    <div style="font-size:32px;margin-bottom:12px;">⚠</div>
+    <div style="font-family:var(--mono);font-size:15px;font-weight:700;margin-bottom:8px;color:var(--text);">
+      Quit EventPass?
+    </div>
+    <div style="font-size:12px;color:var(--text-dim);margin-bottom:24px;">
+      All unsaved data will be lost.
+    </div>
+    <div style="display:flex;gap:12px;justify-content:center;">
+      <button class="btn btn-ghost" onclick="closeExitModal()">Cancel</button>
+      <button class="btn btn-primary" style="background:var(--warn);border-color:var(--warn);"
+              onclick="confirmExit()">Quit</button>
+    </div>
+  </div>
+</div>
+
 <header>
   <div class="logo">Event<span>Pass</span> <span style="font-size:13px;letter-spacing:1px;">// ADMIN</span></div>
   <div class="status-bar">
     <span><span class="status-dot"></span>SYSTEM ONLINE</span>
     <span id="clock" style="font-size:12px;"></span>
+    <button onclick="openExitModal()" title="Quit EventPass"
+            style="margin-left:18px;background:transparent;border:1px solid var(--border);
+                   color:var(--text-dim);border-radius:4px;padding:3px 10px;cursor:pointer;
+                   font-family:var(--mono);font-size:11px;letter-spacing:1px;
+                   transition:all .2s;"
+            onmouseover="this.style.borderColor='var(--warn)';this.style.color='var(--warn)'"
+            onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-dim)'">
+      ✕ EXIT
+    </button>
   </div>
 </header>
 
@@ -911,6 +940,23 @@ window.addEventListener('DOMContentLoaded', () => {
       scanTimer = setTimeout(triggerScan, 250);
     }
   });
+});
+
+function openExitModal() {
+  const m = document.getElementById('exit-modal');
+  m.style.display = 'flex';
+}
+function closeExitModal() {
+  const m = document.getElementById('exit-modal');
+  m.style.display = 'none';
+}
+async function confirmExit() {
+  try { await fetch('http://127.0.0.1:3000/exit', { method: 'POST' }); } catch(e) {}
+  window.close();
+}
+document.addEventListener('click', function(e) {
+  const m = document.getElementById('exit-modal');
+  if (e.target === m) closeExitModal();
 });
 
 function updateClock() {
@@ -2062,6 +2108,16 @@ def sheets_sync():
         return jsonify(success=False, message=f'Sheets error: {e}'), 500
 
 
+@flask_app.route('/exit', methods=['POST'])
+def app_exit():
+    import signal
+    threading.Thread(target=lambda: (
+        __import__('time').sleep(0.3),
+        os.kill(os.getpid(), signal.SIGTERM)
+    ), daemon=True).start()
+    return jsonify(ok=True)
+
+
 @flask_app.route('/health')
 def health():
     return jsonify(status='ok', service='EventPass v2', port=PORT)
@@ -2110,6 +2166,7 @@ def main():
         height           = 820,
         min_size         = (960, 640),
         resizable        = True,
+        fullscreen       = True,
         background_color = '#0a0c0f',
     )
 
